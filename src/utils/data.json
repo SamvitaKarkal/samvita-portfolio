@@ -1,0 +1,154 @@
+{
+  "data": {
+    "main": {
+      "name": "Samvita Karkal",
+      "occupation": "ReactJS + ROR Developer",
+      "description": "Let's build something great together, shall we?",
+      "image": "me.png",
+      "contactMessage": "Let's get in touch. Coffee?",
+      "email": "samvitaskarkal@gmail.com",
+      "phone": "+91 9623025044",
+      "address": {
+        "street": "Bavdhan",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India",
+        "zip": "411021"
+      },
+      "website": "",
+      "resumeDownload": "https://drive.google.com/file/d/1tQ4DgffVyPA3pyxSgZcaLxqP8ETsGQZR/view?usp=share_link",
+      "social": [
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/samvita-karkal-354628168/",
+          "className": "ri-linkedin-line"
+        },
+        {
+          "name": "github",
+          "url": "https://github.com/SamvitaKarkal",
+          "className": "ri-github-line"
+        }
+      ]
+    },
+    "resume": {
+      "skillMessage": "My skills",
+      "educations": [
+        {
+          "school": "Sinhgad College of Engineering, Vadgaon Pune",
+          "degree": "Bachelor in Electronics and Telecommunication Engineering",
+          "graduated": "August 2019"
+        }
+      ],
+      "works": [
+        {
+          "company": "BigBinary Solutions Private Limited",
+          "title": "Software Engineer",
+          "years": "April 2021 - July 2021",
+          "description": "Worked as a full-stack developer with react js as the frontend technology and ruby on rails as the main backend technology."
+        },
+        {
+          "company": "Trikara Technologies Private Limited",
+          "title": "Software Engineer",
+          "years": "Jun 2020 - Sep 2020",
+          "description": "Worked as a full-stack developer with PHP Laravel as the main technology.Gave all my time from making wire-frames till testing and production development."
+        },
+        {
+          "company": "Trikara Technologies Private Limited",
+          "title": "Junior Software Engineer Trainee",
+          "years": "Jun 2019 - Aug 2019",
+          "description": "My first step towards software engineer, started as an intern in Trikara Technologies. During the period of internship I learnt about Laravel and also contributed to the company product."
+        }
+      ],
+      "skills": {
+        "technical_skills": [
+          {
+            "name": "Ruby on Rails",
+            "level": "90"
+          },
+          {
+            "name": "HTML/CSS",
+            "level": "90"
+          },
+          {
+            "name": "Bootstrap",
+            "level": "90"
+          },
+          {
+            "name": "ReactJS",
+            "level": "80"
+          },
+          {
+            "name": "Javascript",
+            "level": "70"
+          },
+          {
+            "name": "MySQL",
+            "level": "70"
+          }
+        ],
+        "professional_skills": [
+          {
+            "name": "Communication",
+            "level": "90"
+          },
+          {
+            "name": "Team Work",
+            "level": "80"
+          },
+          {
+            "name": "Curiosity",
+            "level": "70"
+          },
+          {
+            "name": "Mentorship",
+            "level": "70"
+          }
+        ]
+      }
+    },
+    "projects": [
+      {
+        "title": "Quizzy",
+        "desc": "A platform to build quizzes and display number of correct answers. It's a ReactJS + ROR full-stack application.",
+        "image": "quizzy.png",
+        "url": "https://bb-quizzy.herokuapp.com/",
+        "code": "https://github.com/SamvitaKarkal/quizzy-by-samvitak"
+      },
+      {
+        "title": "DoToDo",
+        "desc": "A full-stack task manager application that helps you manage your day-to-day tasks.",
+        "image": "dotodo.png",
+        "url": "https://dotodo-taskmanager.herokuapp.com/",
+        "code": "https://github.com/SamvitaKarkal/dotodo"
+      },
+      {
+        "title": "Polly",
+        "desc": "This application is maily used to generate polls and get the data report in the form of a chart.",
+        "image": "polly.png",
+        "url": "https://rails-polly-bb.herokuapp.com/",
+        "code": "https://github.com/SamvitaKarkal/rails-polly-bb"
+      },
+      {
+        "title": "URL Shortener",
+        "desc": "Too long URLs hacking up your brain? It is small application made using HTML/CSS/JS and ROR for API can help generate shortened URLs. It's history tracking feature is a plus.",
+        "image": "url-shortener.png",
+        "url": "https://rails-citly-bb.herokuapp.com/",
+        "code": "https://github.com/SamvitaKarkal/rails-citly-bb"
+      },
+      {
+        "title": "GitHub Finder",
+        "desc": "Search Github users, made using React hooks & context",
+        "image": "github-finder.png",
+        "url": "",
+        "code": "https://github.com/SamvitaKarkal/github-user-finder"
+      },
+      {
+        "title": "SpaceX Dashboard",
+        "desc": "SpaceX Dashboard site that displays successful, failed, upcoming and all launches in general. Built purely using React and an API link.",
+        "image": "",
+        "url": "",
+        "code": "https://github.com/SamvitaKarkal/SpaceX-dashboard"
+      }
+    ]
+  }
+}

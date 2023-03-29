@@ -1,0 +1,32 @@
+.vertical-timeline-element-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.vertical-timeline::before {
+  width: 2px;
+}
+
+.vertical-timeline-element-title {
+  font-family: Open Sans, sans-serif !important;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  padding-bottom: 6px !important;
+  font-weight: 400 !important;
+}
+
+.vertical-timeline-element-subtitle {
+  color: inherit !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.title-dark {
+  color: black !important;
+}
+
+.title-light {
+  color: white !important;
+}
