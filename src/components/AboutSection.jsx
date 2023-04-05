@@ -24,7 +24,7 @@ const AboutSection = ({ main }) => {
           </HideStyle>
         </motion.div>
         <motion.p variants={fade}>
-          A <span>{main.occupation}</span> from {main.address.country}.{' '}
+          A <span>{main.occupation}</span> from {main.address.country}.<br/>
           {main.description}
         </motion.p>
         <a href={main.resumeDownload} target='_blank' rel='noopener noreferrer'>
@@ -35,7 +35,7 @@ const AboutSection = ({ main }) => {
         <motion.img
           variants={photoAnimation}
           src={`images/${main.image}`}
-          alt='guy with a camera'
+          alt='samvita karkal'
         />
       </ImageStyle>
       <Wave />

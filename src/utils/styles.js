@@ -36,9 +36,13 @@ export const ImageStyle = styled.div`
   overflow: hidden;
   img {
     width: 100%;
-    height: 80vh;
+    height: 75vh;
     object-fit: cover;
     border-radius: 50%;
+
+    @media (max-width: 560px) {
+      height: 60vh;
+    }
   }
 `;
 

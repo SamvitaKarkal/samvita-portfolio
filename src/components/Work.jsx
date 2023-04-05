@@ -8,9 +8,18 @@ import { data } from '../utils/data.json';
 const Work = () => {
   return (
     <WorkContainerStyle variants={fade}>
-      {data.projects.map((project, idx) => (
-        <Card key={idx} project={project} />
-      ))}
+      <p>PROJECTS</p>
+      <span className='projects-block'>
+        {data.projects.map((project, idx) => (
+          <Card key={idx} project={project} />
+        ))}
+      </span>
+      <p>BLOGS</p>
+      <span className='blog-block'>
+        {data.blogs.map((blog, idx) => (
+          <BlogCard key={idx} blog={blog} />
+        ))}
+      </span>
     </WorkContainerStyle>
   );
 };
@@ -23,10 +32,10 @@ const Card = ({ project }) => {
         <h1>{project.title}</h1>
         <p>{project.desc}</p>
         <div className='app-links'>
-          <a href={project.url} target='_blank' rel='noreferrer'>
+          <a className="links" href={project.url} target='_blank' rel='noreferrer'>
             <i className='ri-links-line'></i>
           </a>
-          <a href={project.code} target='_blank' rel='noreferrer'>
+          <a className="links" href={project.code} target='_blank' rel='noreferrer'>
             <i className='ri-github-line'></i>
           </a>
         </div>
@@ -35,14 +44,46 @@ const Card = ({ project }) => {
   );
 };
 
+const BlogCard = ({ blog }) => {
+  return (
+    <CardStyle>
+      <img src={`images/${blog.image}`} alt={`no-${blog.image}-found`} />
+      
+      <div className='project-details'>
+      <a href={blog.url} target='_blank' rel='noreferrer'>
+        <h1>{blog.title}</h1>
+        <p>{blog.desc}</p>
+      </a>
+      </div>
+    </CardStyle>
+  );
+};
+
 const WorkContainerStyle = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   background: #0e0e0e;
+  p {
+    font-size: 1.2rem;
+  }
+  .projects-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (min-width: 420px) {
+      width: 56%;
+    }
+  }
+  .blog-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
   @media (max-width: 420px) {
     margin: 0px 8px;
     overflow: hidden;
+    justify-content: center;
   }
 `;
 
@@ -52,9 +93,6 @@ const CardStyle = styled.div`
   margin: 12px;
   background-image: #000;
   position: relative;
-  @media (max-width: 420px) {
-    width: 100vw;
-  }
   img {
     width: inherit;
     height: inherit;
@@ -68,6 +106,9 @@ const CardStyle = styled.div`
   }
   &:hover img {
     opacity: 0.3;
+  }
+  @media (max-width: 420px) {
+    width: 100vw;
   }
   .project-details {
     transition: all 1.5s ease;
@@ -91,6 +132,8 @@ const CardStyle = styled.div`
     }
     a {
       text-decoration: none;
+    }
+    .links {
       margin: 0px 8px;
       &:hover {
         i {

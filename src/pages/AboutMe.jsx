@@ -16,7 +16,7 @@ const AboutMe = () => {
       animate='show'
       exit='exit'>
       <AboutSection main={data.main} />
-      <ServicesSection skills={data.resume.skills} />
+      <ServicesSection skills={data.skills} />
       <ScrollTop />
     </motion.div>
   );

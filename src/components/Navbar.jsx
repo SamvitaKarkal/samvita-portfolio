@@ -25,15 +25,15 @@ const Navbar = () => {
         <ul className='menu_icon_hamburger'>
           <li>
             <Link to='/'>1. About Me</Link>
-            <Line
+            <Line1
               transition={{ duration: 0.75 }}
               initial={{ width: '0%' }}
               animate={{ width: pathname === '/' ? '50%' : '0%' }}
             />
           </li>
           <li>
-            <Link to='/work'>2. My Works</Link>
-            <Line
+            <Link to='/work'>2. My Work</Link>
+            <Line1
               transition={{ duration: 0.75 }}
               initial={{ width: '0%' }}
               animate={{ width: pathname === '/work' ? '50%' : '0%' }}
@@ -41,7 +41,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to='/experience'>3. My Experiences</Link>
-            <Line
+            <Line2
               transition={{ duration: 0.75 }}
               initial={{ width: '0%' }}
               animate={{
@@ -51,7 +51,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to='/contact'>4. Contact Me</Link>
-            <Line
+            <Line2
               transition={{ duration: 0.75 }}
               initial={{ width: '0%' }}
               animate={{ width: pathname === '/contact' ? '50%' : '0%' }}
@@ -187,13 +187,28 @@ const NavbarStyle = styled.nav`
   }
 `;
 
-const Line = styled(motion.div)`
+const Line1 = styled(motion.div)`
   height: 0.3rem;
   background: cyan;
   width: 0%;
   position: absolute;
   bottom: -80%;
   left: 60%;
+  @media (max-width: 1300px) {
+    left: 0%;
+  }
+  @media (max-width: 600px) {
+    max-width: 25% !important;
+  }
+`;
+
+const Line2 = styled(motion.div)`
+  height: 0.3rem;
+  background: cyan;
+  width: 0%;
+  position: absolute;
+  bottom: -80%;
+  left: 51%;
   @media (max-width: 1300px) {
     left: 0%;
   }
