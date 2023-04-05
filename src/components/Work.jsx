@@ -70,9 +70,8 @@ const WorkContainerStyle = styled(motion.div)`
   .projects-block {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     @media (min-width: 420px) {
-      width: 56%;
+      width: 50%;
     }
   }
   .blog-block {
