@@ -40,8 +40,13 @@ export const ImageStyle = styled.div`
     object-fit: cover;
     border-radius: 50%;
 
+    @media (max-width: 1260px) {
+      height: 90vh;
+      width: 65%;
+    }
     @media (max-width: 560px) {
       height: 60vh;
+      width: 100%;
     }
   }
 `;
