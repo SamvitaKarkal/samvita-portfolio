@@ -14,7 +14,7 @@ const ContactMe = () => {
   const emailHandler = (e) => {
     e.preventDefault();
     window.open(
-      `mailto:test.mailer.0080@gmail?subject=${subject}&body=${name}: ${message}`
+      `mailto:samvitaskarkal@gmail.com?subject=${subject}&body=${name}: ${message}`
     );
     setName('');
     setSubject('');
