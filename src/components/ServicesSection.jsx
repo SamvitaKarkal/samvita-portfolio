@@ -32,7 +32,7 @@ const ServicesSection = ({ skills }) => {
             <div className='skills-block'>
               {skills.technical_skills.map((skill, idx) => (
                 <div className="skill-details">
-                  <div className={`${idx%2==0 ? 'colored-text' : ''}`}>
+                  <div className={`${idx%2===0 ? 'colored-text' : ''}`}>
                     {skill.name}
                   </div>
                 </div>
@@ -49,7 +49,7 @@ const ServicesSection = ({ skills }) => {
             <div className='skills-inline'>
               {skills.professional_skills.map((skill, idx) => (
                 <div className="skill-details">
-                  <div className={`${idx%2==0 ? '': 'colored-text'}`}>
+                  <div className={`${idx%2===0 ? '': 'colored-text'}`}>
                     {skill.name}
                   </div>
                 </div>
@@ -65,27 +65,27 @@ const ServicesSection = ({ skills }) => {
   );
 };
 
-const ProgressBar = ({ percentage, title }) => {
-  const styles = {
-    strokeLinecap: 'butt',
-    textSize: '16px',
-    pathColor: `cyan`,
-    textColor: '#fff',
-    trailColor: 'black',
-  };
+// const ProgressBar = ({ percentage, title }) => {
+//   const styles = {
+//     strokeLinecap: 'butt',
+//     textSize: '16px',
+//     pathColor: `cyan`,
+//     textColor: '#fff',
+//     trailColor: 'black',
+//   };
 
-  return (
-    <ProgressBarStyle style={{ width: 150, height: 150 }}>
-      <CircularProgressbar
-        value={percentage}
-        text={`${percentage}%`}
-        strokeWidth={3}
-        styles={buildStyles(styles)}
-      />
-      <h3>{title}</h3>
-    </ProgressBarStyle>
-  );
-};
+//   return (
+//     <ProgressBarStyle style={{ width: 150, height: 150 }}>
+//       <CircularProgressbar
+//         value={percentage}
+//         text={`${percentage}%`}
+//         strokeWidth={3}
+//         styles={buildStyles(styles)}
+//       />
+//       <h3>{title}</h3>
+//     </ProgressBarStyle>
+//   );
+// };
 
 const CustomizeLayoutStyle = styled(LayoutStyle)`
   h2 {
@@ -156,28 +156,17 @@ const CardsStyle = styled.div`
   }
 `;
 
-const ProgressBarStyle = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 16px 12px;
-  h3 {
-    font-size: 18px;
-    margin-top: 12px;
-  }
-`;
-
-const skillDetails = styled.div`
-  h3 {
-    font-size: 18px;
-    margin-top: 12px;
-    font-weight: 400;
-    .even {
-      color: cyan;
-    }
-  }
-`;
+// const ProgressBarStyle = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 16px 12px;
+//   h3 {
+//     font-size: 18px;
+//     margin-top: 12px;
+//   }
+// `;
 
 export default ServicesSection;
 
