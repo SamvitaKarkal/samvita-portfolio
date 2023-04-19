@@ -124,6 +124,7 @@ const CardsStyle = styled.div`
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
+      row-gap: 5px;
       .outer-bar {
         width: 80%;
         height: 8px;
