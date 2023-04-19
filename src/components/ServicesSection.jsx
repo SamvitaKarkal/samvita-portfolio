@@ -28,17 +28,12 @@ const ServicesSection = ({ skills }) => {
             animate={controls}
             initial='hidden'
             ref={element}>
-            <h2 style={{ fontSize: 24 }}>Technical Skills</h2>
+            <h3 style={{ fontSize: 24, paddingBottom: 16 }}>Technical Skills</h3>
             <div className='skills-block'>
               {skills.technical_skills.map((skill, idx) => (
-                <div className='outer-bar' key={idx}>
-                  <div
-                    className='inner-bar'
-                    style={{ width: `${skill.level}%` }}
-                  />
-                  <div className='skill-details'>
-                    <span>{skill.name}</span>
-                    <small>{skill.level}%</small>
+                <div className="skill-details">
+                  <div className={`${idx%2==0 ? 'colored-text' : ''}`}>
+                    {skill.name}
                   </div>
                 </div>
               ))}
@@ -50,14 +45,14 @@ const ServicesSection = ({ skills }) => {
             animate={controls2}
             initial='hidden'
             ref={element2}>
-            <h2 style={{ fontSize: 24, marginTop: 48 }}>Professional Skills</h2>
+            <h3 style={{ fontSize: 24, marginTop: 48, paddingBottom: 16}}>Professional Skills</h3>
             <div className='skills-inline'>
               {skills.professional_skills.map((skill, idx) => (
-                <ProgressBar
-                  percentage={skill.level}
-                  title={skill.name}
-                  key={idx}
-                />
+                <div className="skill-details">
+                  <div className={`${idx%2==0 ? '': 'colored-text'}`}>
+                    {skill.name}
+                  </div>
+                </div>
               ))}
             </div>
           </motion.div>
@@ -105,6 +100,14 @@ const CustomizeLayoutStyle = styled(LayoutStyle)`
 const CardsStyle = styled.div`
   display: flex;
   flex-direction: column;
+  .skill-details {
+    font-size: 18px; 
+    margin-top: 12px;
+    font-weight: 400;
+    .colored-text {
+      color: cyan;
+    }
+  }
   .tech-skills,
   .professional-skills {
     display: flex;
@@ -112,15 +115,16 @@ const CardsStyle = styled.div`
     .skills-inline {
       display: flex;
       flex-wrap: wrap;
+      gap: 36px;
       @media (max-width: 1300px) {
         justify-content: center;
       }
     }
     .skills-block {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       .outer-bar {
-        margin: 18px 0px;
         width: 80%;
         height: 8px;
         background-color: black;
@@ -163,4 +167,22 @@ const ProgressBarStyle = styled.div`
   }
 `;
 
+const skillDetails = styled.div`
+  h3 {
+    font-size: 18px;
+    margin-top: 12px;
+    font-weight: 400;
+    .even {
+      color: cyan;
+    }
+  }
+`;
+
 export default ServicesSection;
+
+
+// <ProgressBar
+//   percentage={skill.level}
+//   title={skill.name}
+//   key={idx}
+// />

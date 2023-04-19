@@ -8,13 +8,13 @@ import { data } from '../utils/data.json';
 const Work = () => {
   return (
     <WorkContainerStyle variants={fade}>
-      <p>PROJECTS</p>
+      <h3>PROJECTS</h3>
       <span className='projects-block'>
         {data.projects.map((project, idx) => (
           <Card key={idx} project={project} />
         ))}
       </span>
-      <p>BLOGS</p>
+      <h3>BLOGS</h3>
       <span className='blog-block'>
         {data.blogs.map((blog, idx) => (
           <BlogCard key={idx} blog={blog} />
@@ -32,9 +32,9 @@ const Card = ({ project }) => {
         <h1>{project.title}</h1>
         <p>{project.desc}</p>
         <div className='app-links'>
-          <a className="links" href={project.url} target='_blank' rel='noreferrer'>
+          {/* <a className="links" href={project.url} target='_blank' rel='noreferrer'>
             <i className='ri-links-line'></i>
-          </a>
+          </a> */}
           <a className="links" href={project.code} target='_blank' rel='noreferrer'>
             <i className='ri-github-line'></i>
           </a>
@@ -67,17 +67,22 @@ const WorkContainerStyle = styled(motion.div)`
   p {
     font-size: 1.2rem;
   }
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 42px;
+    color: white !important;
+  }
   .projects-block {
     display: flex;
     flex-wrap: wrap;
-    @media (min-width: 420px) {
-      width: 50%;
-    }
+    justify-content: center;
   }
   .blog-block {
     display: flex;
-    flex-direction: column;
-    justify-content: start;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
   }
   @media (max-width: 420px) {
     margin: 0px 8px;

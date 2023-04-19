@@ -39,7 +39,6 @@ export const ImageStyle = styled.div`
     height: 75vh;
     object-fit: cover;
     border-radius: 50%;
-
     @media (max-width: 1260px) {
       height: 90vh;
       width: 65%;

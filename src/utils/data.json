@@ -59,45 +59,37 @@
       "technical_skills": [
         {
           "name": "Ruby on Rails",
-          "level": "90"
+          "image_address": "rails.png"
         },
         {
-          "name": "HTML/CSS",
-          "level": "90"
-        },
-        {
-          "name": "Bootstrap",
-          "level": "90"
+          "name": "HTML, CSS and JavaScript",
+          "image_address": "html-css.png"
         },
         {
           "name": "ReactJS",
-          "level": "80"
-        },
-        {
-          "name": "Javascript",
-          "level": "70"
+          "image_address": "react.png"
         },
         {
           "name": "MySQL",
-          "level": "70"
+          "image_address": "mysql.png"
+        },
+        {
+          "name": "Elasticsearch",
+          "image_address": "elastic.png"
         }
       ],
       "professional_skills": [
         {
-          "name": "Communication",
-          "level": "90"
+          "name": "Communication"
         },
         {
-          "name": "Team Work",
-          "level": "80"
+          "name": "Team Work"
         },
         {
-          "name": "Curiosity",
-          "level": "70"
+          "name": "Curiosity"
         },
         {
-          "name": "Mentorship",
-          "level": "70"
+          "name": "Mentorship"
         }
       ]
     },
