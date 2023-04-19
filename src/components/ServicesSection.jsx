@@ -115,7 +115,7 @@ const CardsStyle = styled.div`
     .skills-inline {
       display: flex;
       flex-wrap: wrap;
-      gap: 36px;
+      column-gap: 36px;
       @media (max-width: 1300px) {
         justify-content: center;
       }
