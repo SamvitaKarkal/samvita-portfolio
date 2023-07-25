@@ -40,19 +40,19 @@
         "company": "Higgs Boson Health Private Limited",
         "title": "Application Developer",
         "years": "August 2021 - Present",
-        "description": "Worked on developing end-to-end features in applications with Ruby on Rails, React, Redis, Solr (sunspot) & Elasticsearch (searchkick), MySQL, Minitest, AWS and Git stack. With the help of a senior, ported an application from Solr to Elasticsearch and managed maintainance of an entire product single-handedly for 3 months."
+        "description": "Seamlessly upgraded React (v16 to v18) and Rails (v6 to v7), addressing security vulnerabilities and boosting performance. Spearheaded React Testing Framework implementation, achieving robust test coverage. Solo-managed a product with JIRA and Sentry, reducing reported bugs and delivering bug-free features. Migrated application search to Elasticsearch, improving search efficiency."
       },
       {
         "company": "BigBinary Solutions Private Limited",
         "title": "Software Engineer",
         "years": "April 2021 - August 2021",
-        "description": "Worked on Ruby on rails + React projects with Sidekiq, Heroku, CircleCi and Github. Developed end-to-end web products with the above stack. Also, wrote code with TDD approach using Rspec for writing test cases."
+        "description": "Adeptly integrated CircleCI for streamlined automated pipelines, optimizing testing and deployments. Proficiently delivered top-notch web products, enhancing user experience through Tailwind CSS integration. Employed Rspec in a TDD approach for comprehensive test coverage, ensuring high-quality, efficient, and reliable application development."
       },
       {
         "company": "Accenture Technology",
         "title": "Associate Software Engineer",
         "years": "September 2019 - April 2021",
-        "description": "Worked on Twilio-based tasks on a React project. Integrated project with bootstrap and created reusable components for use throughout the application. Also, won ACE award for good design and timely completion of assigned work."
+        "description": "Proficiently integrated Twilio into a React project, enhancing communication with SMS and video calling features. Skillfully crafted reusable forms and appealing components using MUI, leading to an impressive up to 120% rise in user sign-up rates. Awarded ACE accolade for exceptional design and timely project achievements."
       }
     ],
     "skills": {
